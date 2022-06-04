@@ -1,0 +1,438 @@
+*{
+    font-family: comfortaa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header{
+    background-color: #fff;
+    color: blue;
+    font-family: teko;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: dodgerblue;
+
+}
+
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 740px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  
+  
+  {
+@font-face {
+    font-family: teko;
+    src: url(Teko-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: comfortaa;
+    src: url(Comfortaa-Regular.ttf);
+}
+
+    .parallax {
+        /* The image used */
+        background-image: url("pexels-jimmy-jimmy-1725385.png");
+      
+        /* Set a specific height */
+        min-height: 500px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    .corevalues {
+        /* The image used */
+        background-image: url("corevalue.png");
+      
+        /* Set a specific height */
+        min-height: 500px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+header{
+    position: sticky;
+    font-family: teko;
+}
+
+.hamburger{
+    display: block;
+}      
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ccc;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+
+}
+
+.nav-item{
+    margin: 16px 0;
+    font-family: teko;
+}
+
+.nav-menu.active{
+    left: 0
+}
+
+.nav-link{
+    transition: 0.7s ease;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.nav-link:active{
+    color: dodgerblue;
+}
+
+
+#firstpage{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(frontbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;  
+}
+
+h1{
+    font-size: 4rem;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+#btn{
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 1.2rem;
+    border-radius:50px ;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#btn a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#about_us {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0.5rem;
+}
+
+#heading{
+    width: 100%;
+    font-size: 1.5rem;
+    border-left: 0.3rem blue solid;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    margin-top: 0.9rem;
+    font-family: teko;
+    letter-spacing: 0.2rem;
+}
+
+
+#sub-heading{
+    width: 100%;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#content {
+width: 100%;
+height: 100%;
+text-align: left;
+font-size: 1.2rem;
+color: rgb(78, 77, 77);
+
+}
+
+#sub-heading, #content{
+    margin-top: 1.5rem;
+}
+
+#project{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#project-list{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#prop_details-l{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#project-list-content{
+    margin-bottom: 3rem;
+}
+
+
+#title{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-top: 4rem;
+}
+
+#prop_details{
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+picture{
+    width: 100%;
+}
+
+#prop_year{
+    font-size: 2rem;
+    width: 100%;
+    color: rgb(78, 77, 77);
+
+    
+
+}
+#prop_name{
+width: 100%;
+height: auto;
+font-size: 2rem;
+text-transform: capitalize;
+
+}
+
+#prop_location{
+    width: 100%;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: rgb(78, 77, 77);
+
+    
+}
+
+#values{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#v-title, #v-content,#icon {
+    text-align: center;
+}
+#v-title{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+#v-content {
+    font-size: 1.2rem;
+    color: rgb(78, 77, 77);
+
+}
+
+
+i{
+    font-size: 4rem;
+    color: dodgerblue;
+}
+
+#footer{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+
+
+#footer-content{
+    width: 100%;
+    height: 100%;
+justify-content:space-around ;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+}
+
+#social_icons {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+
+
+#partners{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+#partners ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners ul li{
+    display: flex;
+    flex-direction:column ;
+    margin: 1rem;
+}
+
+
+#footer-art {
+width: 100%;
+height: auto;
+}
+
+#copyright{
+    color: #ccc;
+}
+#com_description{
+    color: #333;
+}
+
+#com_name{
+    color: dodgerblue;
+    font-size: bold;
+}
+
+
+
+
+}
