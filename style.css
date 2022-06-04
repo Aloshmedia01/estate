@@ -69,12 +69,7 @@ a{
 }
 
 
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 740px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  
-  
+@media (max-width: 768px) 
   {
 @font-face {
     font-family: teko;
