@@ -12,6 +12,11 @@ header{
     background-color: #fff;
     color: blue;
     font-family: teko;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 14vh;
 }
 
 
@@ -25,6 +30,7 @@ a{
 }
 
 .navbar{
+    width: 100%;
     min-height: 70px;
     display: flex;
     justify-content: space-between;
@@ -39,8 +45,18 @@ a{
     gap: 60px;
 }
 
+
+
+
 .logo{
-    font-size: 2rem;
+    padding: 10px;
+}
+
+
+#logo {
+    max-width:100% ;
+    display: block;
+    height: 70px;
 }
 
 .nav-link{
@@ -161,9 +177,8 @@ header{
 
 .nav-link:active{
     color: dodgerblue;
+
 }
-
-
 #firstpage{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(frontbg.png);
     background-repeat: no-repeat;
@@ -383,6 +398,10 @@ flex-direction: column;
     margin: 0;
     padding: 0;
     font-size: 2rem;
+}
+
+#social_icons ul li i {
+cursor: pointer;
 }
 
 
